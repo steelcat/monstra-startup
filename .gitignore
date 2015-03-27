@@ -33,3 +33,6 @@ Thumbs.db
 /public/*
 /storage/*
 /tmp/*
+
+# ignore phpstorm files and folders
+.idea/
