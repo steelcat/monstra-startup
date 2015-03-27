@@ -16,9 +16,11 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 // Задача по-умолчанию
-gulp.task('default', ['jade','scss','js','watch']);
+gulp.task('default', ['server','jade','scss','js','watch']);
 
-
+gulp.task('server', function() {
+    connect.server();
+});
 
 // Собираем JADE
 gulp.task('jade', function() {

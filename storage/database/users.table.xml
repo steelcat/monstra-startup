@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<root><options><autoincrement>0</autoincrement></options><fields><login/><password/><email/><role/><date_registered/><firstname/><lastname/><login/><twitter/><skype/><hash/><about_me/></fields></root>
+<root><options><autoincrement>1</autoincrement></options><fields><login/><password/><email/><role/><date_registered/><firstname/><lastname/><login/><twitter/><skype/><hash/><about_me/></fields><users><id>1</id><uid>c0504fcf99</uid><firstname/><lastname/><twitter/><skype/><about_me/><login>monstra-startup</login><password>c480d99b69992bfc4e57eb5d6208b0de</password><email>monstra-startup@monstra-startup.ru</email><hash>zBGI6xwBdb1g</hash><date_registered>1427481712</date_registered><role>admin</role></users></root>
