@@ -36,3 +36,5 @@ Thumbs.db
 
 # ignore phpstorm files and folders
 .idea/
+node_modules/
+bower_components/

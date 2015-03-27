@@ -1,0 +1,28 @@
+{
+  "name": "monstra-startup",
+  "version": "1.0.0",
+  "description": "Monstra Startup.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://steelcat@github.com/steelcat/monstra-startup.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steelcat/monstra-startup/issues"
+  },
+  "homepage": "https://github.com/steelcat/monstra-startup",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-css-globbing": "^0.1.7",
+    "gulp-jade": "^1.0.0",
+    "gulp-jade-globbing": "^0.1.6",
+    "gulp-jade-php": "^1.1.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^1.3.3"
+  }
+}

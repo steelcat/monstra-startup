@@ -1,0 +1,21 @@
+{
+  "name": "monstra-startup",
+  "version": "3.0.1",
+  "homepage": "https://github.com/steelcat/monstra-startup",
+  "authors": [
+    "Steelcat <steelpuppy@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "~3.3.4",
+    "jquery": "~1.11.2",
+    "components-font-awesome": "~4.3.0"
+  }
+}
