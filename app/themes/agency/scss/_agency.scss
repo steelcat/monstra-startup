@@ -584,6 +584,7 @@ footer {
 	span.copyright {
 		line-height: 40px;
         @include heading-font;
+        font-weight: 700;
 		text-transform: none;
 	}
 	ul.quicklinks {
