@@ -139,8 +139,8 @@ html(lang='ru')
 				.col-sm-4
 					.team-member
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/1.jpg', alt='')
-						h4 Kay Garland
-						p.text-muted Lead Designer
+						h4 Лика Кузьмина
+						p.text-muted Ведущий дизайнер
 						ul.list-inline.social-buttons
 							li
 								a(href='#')
@@ -154,8 +154,8 @@ html(lang='ru')
 				.col-sm-4
 					.team-member
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/2.jpg', alt='')
-						h4 Larry Parker
-						p.text-muted Lead Marketer
+						h4 Влад Стахов
+						p.text-muted Маркетолог
 						ul.list-inline.social-buttons
 							li
 								a(href='#')
@@ -169,8 +169,8 @@ html(lang='ru')
 				.col-sm-4
 					.team-member
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/3.jpg', alt='')
-						h4 Diana Pertersen
-						p.text-muted Lead Developer
+						h4 Диана Терехова
+						p.text-muted Ведущий разработчик
 						ul.list-inline.social-buttons
 							li
 								a(href='#')
@@ -200,5 +200,42 @@ html(lang='ru')
 					.col-md-3.col-sm-6
 						a(href='#')
 							img.img-responsive.img-centered(src!='<?php echo Site::url(); ?>/public/themes/agency/images/logos/creative-market.jpg', alt='')
+		+section('contact','','Связаться с нами','Lorem ipsum dolor sit amet consectetur.')
+			.row
+				.col-lg-12
+					form#contactForm(name='sentMessage', novalidate='')
+						.row
+							.col-md-6
+								.form-group
+									input#name.form-control(type='text', placeholder='Ваше имя *', required='', data-validation-required-message='Введите Ваше имя.')
+									p.help-block.text-danger
+								.form-group
+									input#email.form-control(type='email', placeholder='Ваш E-mail *', required='', data-validation-required-message='Введите Ваш e-mail.')
+									p.help-block.text-danger
+								.form-group
+									input#phone.form-control(type='tel', placeholder='Ваш телефон *', required='', data-validation-required-message='Введите ваш номер телефона.')
+									p.help-block.text-danger
+							.col-md-6
+								.form-group
+									textarea#message.form-control(placeholder='Ваше сообщение *', required='', data-validation-required-message='Введите текст сообщения.')
+									p.help-block.text-danger
+							.clearfix
+							.col-lg-12.text-center
+								#success
+								button.btn.btn-xl(type='submit') Отправить сообщение
 		+footer
 		+global-foot
+			// jQuery
+			<?php Javascript::add('public/assets/js/jquery.min.js', 'frontend', 1); ?>
+			// Bootstrap
+			<?php Javascript::add('public/assets/js/bootstrap.min.js', 'frontend', 2); ?>
+			// Plugins
+			<?php Javascript::add('public/themes/agency/js/plugins/jquery.easing.js', 'frontend', 3); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/classie.js', 'frontend', 4); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/cbpAnimatedHeader.js', 'frontend', 5); ?>
+			// Contact Form JavaScript
+			<?php Javascript::add('public/themes/agency/js/plugins/jqBootstrapValidation.js', 'frontend', 6); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/contact_me.js', 'frontend', 7); ?>
+			// Custom Theme JavaScript
+			<?php Javascript::add('public/themes/agency/js/agency.js', 'frontend', 8); ?>
+			<?php Javascript::load(); ?>
