@@ -2,5 +2,12 @@ include ../../global-blocks/**/*.jade
 include blocks/**/*.jade
 doctype html
 html(lang='ru')
-	+global-head(agency)
-	body.page
+	+global-head('agency')
+	body.page#page-top
+		+navbar
+		+header
+		+section('services','','Наши услуги','Lorem ipsum dolor sit amet consectetur.')
+		+section('portfolio','bg-light-gray','Портфолио','Lorem ipsum dolor sit amet consectetur.')
+		+section('about','','О нас','Lorem ipsum dolor sit amet consectetur.')
+		+footer
+		+global-foot

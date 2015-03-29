@@ -13,6 +13,7 @@ var gulp = require('gulp'),
     scss = require('gulp-sass'),
     jadeglob = require('gulp-jade-globbing'),
     scssglob = require('gulp-css-globbing'),
+    autoprefixer = require('gulp-autoprefixer'),
     rename = require('gulp-rename');
 
 // Задача по-умолчанию
@@ -45,8 +46,8 @@ gulp.task('scss', function() {
                 filename_extension: false
             }
         }))
-        .pipe(scss())
-        .on('error', function(err){ console.log(err.message); })
+        .pipe(scss({errLogToConsole: true}))
+        .pipe(autoprefixer())
         .pipe(gulp.dest('./public/themes/'+templateName+'/css/'));
 });
 

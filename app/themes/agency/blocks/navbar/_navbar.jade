@@ -1,0 +1,27 @@
+mixin navbar
+	// Navigation
+	nav(class="navbar navbar-default navbar-fixed-top")
+		.container
+			// Brand and toggle get grouped for better mobile display
+			div(class="navbar-header page-scroll")
+				button(type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1")
+					span(class="sr-only") Toggle navigation
+					span(class="icon-bar")
+					span(class="icon-bar")
+					span(class="icon-bar")
+				a(class="navbar-brand page-scroll" href="#page-top") Start Bootstrap
+			// Collect the nav links, forms, and other content for toggling
+			div(class="collapse navbar-collapse" id="bs-example-navbar-collapse-1")
+				ul(class="nav navbar-nav navbar-right")
+					li(class="hidden")
+						a(href="#page-top")
+					li
+						a(class="page-scroll" href="#services") Наши услуги
+					li
+						a(class="page-scroll" href="#portfolio") Портфолио
+					li
+						a(class="page-scroll" href="#about") О нас
+					li
+						a(class="page-scroll" href="#team") Команда
+					li
+						a(class="page-scroll" href="#contact") Связаться с нами

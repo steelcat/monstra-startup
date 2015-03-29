@@ -18,6 +18,7 @@
   "homepage": "https://github.com/steelcat/monstra-startup",
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
     "gulp-connect-php": "0.0.5",
     "gulp-css-globbing": "^0.1.7",
     "gulp-jade": "^1.0.0",

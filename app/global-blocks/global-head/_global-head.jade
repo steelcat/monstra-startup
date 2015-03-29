@@ -25,13 +25,8 @@ mixin global-head(templateDir)
 
 		// Styles
 		link(rel="stylesheet" href!="<?php echo Site::url(); ?>/public/assets/css/bootstrap.css" type="text/css")
-		<?php Stylesheet::add('public/themes/default/css/default.css', 'frontend', 2); ?>
+		<?php Stylesheet::add('public/themes/!{templateDir}/css/style.css', 'frontend', 1); ?>
 		<?php Stylesheet::load(); ?>
-
-		// JavaScripts
-		<?php Javascript::add('public/assets/js/jquery.min.js', 'frontend', 1); ?>
-		<?php Javascript::add('public/assets/js/bootstrap.min.js', 'frontend', 2); ?>
-		<?php Javascript::load(); ?>
 
 		<?php Action::run('theme_header'); ?>
 
@@ -42,6 +37,6 @@ mixin global-head(templateDir)
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<!-- Favicons -->
+		// Favicons
 		link(rel="icon" href!="<?php echo Site::url(); ?>/favicon.ico" type="image/x-icon")
 		link(rel="shortcut icon" href!="<?php echo Site::url(); ?>/favicon.ico" type="image/x-icon")
