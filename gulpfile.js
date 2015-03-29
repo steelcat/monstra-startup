@@ -17,15 +17,21 @@ var gulp = require('gulp'),
     rename = require('gulp-rename');
 
 // Задача по-умолчанию
-gulp.task('default', ['server','jade','scss','js','watch']);
+gulp.task('default', ['server','jade','scss','js','images','watch']);
 
 gulp.task('server', function() {
     connect.server();
 });
 
+// Копируем шрифты из Bower
+gulp.task('bower:fonts', function() {
+    return gulp.src('./bower_components/**/fonts/*.**')
+        .pipe(gulp.dest('./public/assets/fonts/'))
+});
+
 // Собираем JADE
 gulp.task('jade', function() {
-    gulp.src('./app/themes/'+templateName+'/[^_]*.jade')
+    return gulp.src('./app/themes/'+templateName+'/[^_]*.jade')
         .pipe(jadeglob())
         .pipe(jade({
             pretty: true
@@ -57,9 +63,16 @@ gulp.task('js', function() {
         .pipe(gulp.dest('./public/themes/'+templateName+'/js/'));
 });
 
+// Копируем картинки из папки разработки
+gulp.task('images', function() {
+    return gulp.src('./app/themes/'+templateName+'/images/**/*.**')
+        .pipe(gulp.dest('./public/themes/'+templateName+'/images/'))
+});
+
 // Наблюдаем за изменением файлов и компилируем измененные файлы
 gulp.task('watch', function() {
     gulp.watch('./app/themes/'+templateName+'/**/*.jade', ['jade']);
     gulp.watch('./app/themes/'+templateName+'/**/*.scss', ['scss']);
     gulp.watch('./app/themes/'+templateName+'/**/*.js', ['js']);
+    gulp.watch('./app/themes/'+templateName+'/images/**/*.*', ['images']);
 });
