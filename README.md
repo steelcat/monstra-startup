@@ -1,18 +1,19 @@
-# Monstra CMS
-Monstra is a modern and lightweight Content Management System.
+# Monstra Startup
+Monstra Startup - это удобная среда разработки шаблонов для Monstra CMS. Ориентирована на русскоязычную аудиторию разработчиков.
 
-## System Requirements
+## Системные требования
 Operation system: Unix, Linux, Windows, Mac OS   
-Middleware: PHP 5.3.0 or higher with PHP's [SimpleXML module](http://php.net/simplexml) and [Multibyte String module](http://php.net/mbstring)   
+Middleware: PHP 5.4.0 or higher with PHP's [SimpleXML module](http://php.net/simplexml) and [Multibyte String module](http://php.net/mbstring)   
 Webserver: Apache with [Mod Rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) or Ngnix with [Rewrite Module](http://wiki.nginx.org/HttpRewriteModule)   
 
-## Steps to Install
-1. [Download the latest version.](http://monstra.org/download)
-2. Unzip the contents to a new folder on your local computer.
-3. Upload that whole folder with an FTP client to your host.
-4. You may also need to recursively CHMOD the folder /storage/, /tmp/, /backups/ and /public/ to 755(or 777) if your host doesn't set it implicitly.
-5. Also you may also need to recursively CHMOD the /install.php, /.htaccess and /sitemap.xml to 755(or 777) if your host doesn't set it implicitly.
-6. Type http://example.org/install.php in the browser.
+## Установка
+0. Установить на компьютер [Node.js](https://nodejs.org/download/) и [PHP 5.4](http://php.net/downloads.php)
+1. [Скачать свежую версию Monstra Startup.](https://github.com/steelcat/monstra-startup/tree/develop)
+2. Разархивировать файлы в папку на вашем локальном компьютере.
+3. Перейти в эту папку и открыть в ней окно терминала.
+4. В терминале набрать команды: npm install -save gulp -g и npm install -save bower -g, после чего ввести команды: npm install и bower install.
+5. По завершении установки зависимостей проекта, набрать команду gulp в терминале для запуска локального сервера разработки.
+6. Наберите в бразере http://localhost:8000 для открытия сайта.
 
 ## Contributing
 1. Help on the [Forum.](http://forum.monstra.org)
