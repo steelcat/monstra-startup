@@ -1,0 +1,26 @@
+mixin modal(mid)
+	// Portfolio Modal 6
+	.portfolio-modal.modal.fade(id=mid tabindex='-1', role='dialog', aria-hidden='true')
+		.modal-content
+			.close-modal(data-dismiss='modal')
+				.lr
+					.rl
+			.container
+				.row
+					.col-lg-8.col-lg-offset-2
+						.modal-body
+							// Project Details Go Here
+							h2 Project Name
+							p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+							img.img-responsive.img-centered(src!='<?php echo Site::url(); ?>/public/themes/agency/images/portfolio/dreams-preview.png', alt='')
+							p
+								| Dreams is a free PSD web template built by
+								a(href='https://www.behance.net/MathavanJaya') Mathavan Jaya
+								| . Dreams is a modern one page web template designed for almost any purpose. It&rsquo;s a beautiful template that&rsquo;s designed with the Bootstrap framework in mind.
+							p
+								| You can download the PSD template in this portfolio sample item at
+								a(href='http://freebiesxpress.com/gallery/dreams-free-one-page-web-template/') FreebiesXpress.com
+								| .
+							button.btn.btn-primary(type='button', data-dismiss='modal')
+								i.fa.fa-times
+								|  Close Project

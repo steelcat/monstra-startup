@@ -7,7 +7,7 @@ Middleware: PHP 5.4.0 or higher with PHP's [SimpleXML module](http://php.net/sim
 Webserver: Apache with [Mod Rewrite](http://httpd.apache.org/docs/current/mod/mod_rewrite.html) or Ngnix with [Rewrite Module](http://wiki.nginx.org/HttpRewriteModule)   
 
 ## Установка
-0. Установить на компьютер [Node.js](https://nodejs.org/download/) и [PHP 5.4](http://php.net/downloads.php)
+0. Установить на компьютер [Node.js](https://nodejs.org/download/) и [PHP 5.4](http://php.net/downloads.php).
 1. [Скачать свежую версию Monstra Startup.](https://github.com/steelcat/monstra-startup/tree/develop)
 2. Разархивировать файлы в папку на вашем локальном компьютере.
 3. Перейти в эту папку и открыть в ней окно терминала.
