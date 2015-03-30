@@ -8,23 +8,23 @@ html(lang='ru')
 		+header
 		+section('services','','Наши услуги','Lorem ipsum dolor sit amet consectetur.')
 			div(class="row text-center")
-				.col-md-4
+				.col-md-4(data-sr="enter left, hustle 100px, reset")
 					span(class="fa-stack fa-4x")
 						i(class="fa fa-circle fa-stack-2x text-primary")
 						i(class="fa fa-shopping-cart fa-stack-1x fa-inverse")
-					h4(class="service-heading") E-Commerce
+					h4(class="service-heading") Интернет-магазины под ключ
 					p(class="text-muted") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-				.col-md-4
+				.col-md-4(data-sr="enter top, hustle 100px, reset")
 					span(class="fa-stack fa-4x")
 						i(class="fa fa-circle fa-stack-2x text-primary")
 						i(class="fa fa-laptop fa-stack-1x fa-inverse")
-					h4(class="service-heading") Responsive Design
+					h4(class="service-heading") Сайты-визитки
 					p(class="text-muted") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
-				.col-md-4
+				.col-md-4(data-sr="enter right, hustle 100px, reset")
 					span(class="fa-stack fa-4x")
 						i(class="fa fa-circle fa-stack-2x text-primary")
 						i(class="fa fa-lock fa-stack-1x fa-inverse")
-					h4(class="service-heading") Web Security
+					h4(class="service-heading") Веб-дизайн
 					p(class="text-muted") Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
 		+section('portfolio','bg-light-gray','Портфолио','Lorem ipsum dolor sit amet consectetur.')
 			.row
@@ -137,7 +137,7 @@ html(lang='ru')
 		+section('team','bg-light-gray','Наша команда','Lorem ipsum dolor sit amet consectetur.')
 			.row
 				.col-sm-4
-					.team-member
+					.team-member(data-sr="enter left, hustle 100px, reset")
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/1.jpg', alt='')
 						h4 Лика Кузьмина
 						p.text-muted Ведущий дизайнер
@@ -152,7 +152,7 @@ html(lang='ru')
 								a(href='#')
 									i.fa.fa-linkedin
 				.col-sm-4
-					.team-member
+					.team-member(data-sr="enter bottom, hustle 100px, reset")
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/2.jpg', alt='')
 						h4 Влад Стахов
 						p.text-muted Маркетолог
@@ -167,7 +167,7 @@ html(lang='ru')
 								a(href='#')
 									i.fa.fa-linkedin
 				.col-sm-4
-					.team-member
+					.team-member(data-sr="enter right, hustle 100px, reset")
 						img.img-responsive.img-circle(src!='<?php echo Site::url(); ?>/public/themes/agency/images/team/3.jpg', alt='')
 						h4 Диана Терехова
 						p.text-muted Ведущий разработчик
@@ -233,9 +233,10 @@ html(lang='ru')
 			<?php Javascript::add('public/themes/agency/js/plugins/jquery.easing.js', 'frontend', 3); ?>
 			<?php Javascript::add('public/themes/agency/js/plugins/classie.js', 'frontend', 4); ?>
 			<?php Javascript::add('public/themes/agency/js/plugins/cbpAnimatedHeader.js', 'frontend', 5); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/scrollReveal.js', 'frontend', 6); ?>
 			// Contact Form JavaScript
-			<?php Javascript::add('public/themes/agency/js/plugins/jqBootstrapValidation.js', 'frontend', 6); ?>
-			<?php Javascript::add('public/themes/agency/js/plugins/contact_me.js', 'frontend', 7); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/jqBootstrapValidation.js', 'frontend', 7); ?>
+			<?php Javascript::add('public/themes/agency/js/plugins/contact_me.js', 'frontend', 8); ?>
 			// Custom Theme JavaScript
-			<?php Javascript::add('public/themes/agency/js/agency.js', 'frontend', 8); ?>
+			<?php Javascript::add('public/themes/agency/js/agency.js', 'frontend', 9); ?>
 			<?php Javascript::load(); ?>

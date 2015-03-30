@@ -59,7 +59,7 @@ gulp.task('scss', function() {
 
 // Собираем JavaScript
 gulp.task('js', function() {
-    return gulp.src(['./app/themes/'+templateName+'/js/[^_]*.js'])
+    return gulp.src(['./app/themes/'+templateName+'/js/**/[^_]*.js'])
         .pipe(gulp.dest('./public/themes/'+templateName+'/js/'));
 });
 
